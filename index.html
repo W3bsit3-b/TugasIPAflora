@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flora Bali Lengkap</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+body{
+  background: linear-gradient(160deg,#1e3c72,#2a5298,#1e3c72);
+  background-size:200% 200%;
+  animation:bgMove 8s infinite;
+  color:white;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+header{text-align:center;padding:40px}
+
+.page{display:none;padding:20px;max-width:900px;margin:auto;animation:fade .5s}
+.active{display:block}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+
+.menu{display:flex;flex-direction:column;gap:15px}
+
+.option{
+padding:20px;border-radius:15px;border:none;
+background:rgba(255,255,255,0.15);
+color:white;cursor:pointer;transition:.3s;
+}
+
+.option:hover{transform:scale(1.05)}
+.option:active{transform:scale(1.1)}
+
+.back{
+margin-bottom:15px;padding:10px;
+border:none;border-radius:10px;
+background:rgba(0,0,0,0.3);color:white;
+}
+
+h2{margin-top:20px}
+p{margin-top:10px;line-height:1.7}
+ul{margin-left:20px;margin-top:10px}
+</style>
+</head>
+
+<body>
+
+<header id="header">
+<h1>Flora Endemik & Khas Bali</h1>
+<p>Penjelasan Ilmiah Lengkap</p>
+</header>
+
+<div id="home" class="page active">
+<div class="menu">
+<button class="option" onclick="showPage('majegau')">🌳 Majegau</button>
+<button class="option" onclick="showPage('bambu')">🎋 Bambu Alas</button>
+<button class="option" onclick="showPage('jempiring')">🌼 Jempiring</button>
+<button class="option" onclick="showPage('taru')">🌲 Taru Menyan</button>
+</div>
+</div>
+
+<!-- MAJEGAU -->
+<div id="majegau" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Majegau</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Dysoxylum densiflorum</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Plantae<br>
+Divisi: Magnoliophyta<br>
+Kelas: Magnoliopsida<br>
+Ordo: Sapindales<br>
+Famili: Meliaceae<br>
+Genus: Dysoxylum
+</p>
+
+<h2>Deskripsi</h2>
+<p>
+Majegau merupakan pohon khas Bali yang dikenal karena kayunya yang harum dan berkualitas tinggi. Pohon ini memiliki nilai penting dalam budaya Bali, terutama dalam upacara adat dan pembangunan pura.
+</p>
+
+<h2>Ciri Botani</h2>
+<ul>
+<li>Batang tinggi dan kuat</li>
+<li>Kayu beraroma khas</li>
+<li>Daun hijau lebat</li>
+</ul>
+
+<h2>Habitat</h2>
+<p>Hutan tropis dan daerah pegunungan Bali.</p>
+
+<h2>Manfaat</h2>
+<ul>
+<li>Bahan bangunan tradisional</li>
+<li>Digunakan dalam upacara keagamaan</li>
+<li>Kayu berkualitas tinggi</li>
+</ul>
+
+<h2>Perkembangbiakan</h2>
+<p>Melalui biji dan pertumbuhan alami di hutan.</p>
+</div>
+
+<!-- BAMBU -->
+<div id="bambu" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Bambu Alas</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Bambusa sp.</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Plantae<br>
+Famili: Poaceae
+</p>
+
+<h2>Deskripsi</h2>
+<p>
+Bambu Alas merupakan jenis bambu khas Bali yang tumbuh secara menyebar dan tidak berumpun rapat. Banyak ditemukan di kawasan hutan lindung.
+</p>
+
+<h2>Ciri</h2>
+<ul>
+<li>Batang panjang dan lentur</li>
+<li>Tumbuh tidak rapat</li>
+</ul>
+
+<h2>Manfaat</h2>
+<p>
+Digunakan dalam kerajinan, bangunan, dan upacara adat.
+</p>
+</div>
+
+<!-- JEMPIRING -->
+<div id="jempiring" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Jempiring</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Tabernaemontana divaricata</p>
+
+<h2>Klasifikasi</h2>
+<p>
+Kingdom: Plantae<br>
+Famili: Apocynaceae
+</p>
+
+<h2>Deskripsi</h2>
+<p>
+Jempiring adalah bunga khas Bali yang memiliki aroma harum dan sering digunakan dalam upacara keagamaan.
+</p>
+
+<h2>Manfaat</h2>
+<ul>
+<li>Simbol Kota Denpasar</li>
+<li>Bahan sesajen</li>
+</ul>
+</div>
+
+<!-- TARU MENYAN -->
+<div id="taru" class="page">
+<button class="back" onclick="backHome()">⬅</button>
+<h1>Taru Menyan</h1>
+
+<h2>Nama Ilmiah</h2>
+<p>Styrax benzoin</p>
+
+<h2>Deskripsi</h2>
+<p>
+Taru Menyan adalah pohon unik di Desa Trunyan yang dipercaya mampu menyerap bau jenazah, sehingga tidak menimbulkan bau menyengat.
+</p>
+
+<h2>Keunikan</h2>
+<ul>
+<li>Menghasilkan aroma harum</li>
+<li>Berhubungan dengan tradisi pemakaman Bali Aga</li>
+</ul>
+</div>
+
+<script>
+function showPage(p){
+document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+document.getElementById(p).classList.add('active');
+document.getElementById('header').style.display='none';
+}
+function backHome(){
+document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+document.getElementById('home').classList.add('active');
+document.getElementById('header').style.display='block';
+}
+</script>
+
+</body>
+</html>
